@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <form action="" id="QLSV_API">
+        <h2>Bài tập quản lí Sinh Viên API</h2>
+        <div class="row">
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="maSinhVien" class="form-label">Mã SV</label>
+              <input
+                type="text"
+                class="form-control"
+                name=""
+                id="maSinhVien"
+                aria-describedby="helpId"
+                placeholder="Vui lòng nhập mã sinh viên"
+              />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="tenSinhVien" class="form-label">Tên Sinh Viên</label>
+              <input
+                type="text"
+                class="form-control"
+                name=""
+                id="tenSinhVien"
+                aria-describedby="helpId"
+                placeholder="Vui lòng nhập tên sinh viên"
+              />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="diemRenLuyen" class="form-label"
+                >Điểm rèn luyện</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                name=""
+                id="diemRenLuyen"
+                aria-describedby="helpId"
+                placeholder="Vui lòng nhập điểm rèn luyện"
+              />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="loaiSinhVien" class="form-label">loaiSinhVien</label>
+              <select
+                class="form-select form-select-lg"
+                name=""
+                id="loaiSinhVien"
+              >
+                <option value="giau">Giàu</option>
+                <option value="ngheo">Nghèo</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="text"
+                class="form-control"
+                name=""
+                id="email"
+                aria-describedby="helpId"
+                placeholder="Vui lòng nhập email"
+              />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="soDienThoai" class="form-label">Số điện thoại</label>
+              <input
+                type="text"
+                class="form-control"
+                name=""
+                id="soDienThoai"
+                aria-describedby="helpId"
+                placeholder="Vui lòng nhập SĐT"
+              />
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="mb-3">
+              <label for="diemToan" class="form-label">Điểm Toán</label>
+              <input
+                type="text"
+                class="form-control"
+                name=""
+                id="diemToan"
+                aria-describedby="helpId"
+                placeholder="Vui lòng nhập điểm toán"
+              />
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="mb-3">
+              <label for="diemLy" class="form-label">Điểm Lý</label>
+              <input
+                type="text"
+                class="form-control"
+                name=""
+                id="diemLy"
+                aria-describedby="helpId"
+                placeholder="Vui lòng nhập điểm lý"
+              />
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="mb-3">
+              <label for="diemHoa" class="form-label">Điểm Hoá</label>
+              <input
+                type="text"
+                class="form-control"
+                name=""
+                id="diemHoa"
+                aria-describedby="helpId"
+                placeholder="Vui lòng nhập điểm hoá"
+              />
+            </div>
+          </div>
+          <div>
+            <button class="btn btn-success">Thêm người dùng</button>
+            <button class="btn btn-dark">Reset</button>
+            <button class="btn btn-primary">Cập nhật</button>
+          </div>
+        </div>
+      </form>
+      <!--bs5-table-default-->
+      <div class="table-responsive mt-5">
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th scope="col">Mã SV</th>
+              <th scope="col">Tên Sinh Viên</th>
+              <th scope="col">Email</th>
+              <th scope="col">Số Điện Thoại</th>
+              <th scope="col">Loại Sinh Viên</th>
+              <th scope="col">Điểm Trung Bình</th>
+              <th scope="col">Hành động</th>
+            </tr>
+          </thead>
+          <tbody id="tBody">
+            <tr class="">
+              <td scope="row">DH52301859</td>
+              <td>Thắng</td>
+              <td>haha@gmail.com</td>
+              <td>0369638405</td>
+              <td>Giàu</td>
+              <td>9</td>
+              <td>
+                <button class="btn btn-danger">Xoá</button>
+                <button class="btn btn-warning">Sửa</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
+      integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./JS/index.JS"></script>
+  </body>
+</html>
